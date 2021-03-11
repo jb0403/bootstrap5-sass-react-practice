@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100% !important;
+}
+
+body {
+  width: 100%;
+  display: flex !important;
+  flex-direction: column;
+  height: 100% !important;
+}
+
+.navbar {
+  background-color: #fff !important;
+}
+
+.navbar-brand {
+  font-size: 1.9rem !important;
+  color: #565387 !important;
+}
+
+.navbar a {
+  font-size: 1.3rem !important;
+  text-transform: capitalize;
+}
+
+.menu_active {
+  font-weight: bold;
+  border-bottom: 1px solid #565387 !important;
+}
+
+.navbar a:hover {
+  color: #3498db !important;
+}
+
+@media (max-width: 991px) {
+  #header {
+    height: 80vh;
+    text-align: center;
+  }
+  #header .header_img {
+    text-align: center;
+  }
+  #header .header_img img {
+    width: 60%;
+  }
+
+  @media (max-width: 768px) {
+    #header {
+      margin-top: 2rem;
+    }
+    #header h1 {
+      font-size: 2.8rem;
+    }
+    #header h2 {
+      font-size: 1.8rem;
+      margin-bottom: 3rem;
+    }
+  }
+  #header .header_img img {
+    width: 70%;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+  .menu_active {
+    font-weight: bold;
+    border-bottom: none;
+  }
+}
+
+/* =================================================================
+          main landing section
+================================================================== */
+
+#header {
+  width: 100%;
+  height: 80vh;
+  margin-top: 7rem;
+}
+
+#header h1 {
+  margin: 0 0 1rem 0;
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #000;
+}
+
+#header .brand_name {
+  color: #3498db;
+}
+
+#header h1 {
+  font-size: 2.4rem;
+  color: #484848;
+}
+
+#header .btn_get_started {
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
+  color: #3498db;
+  border: 0.2rem solid #3498db;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#header .btn_get_started:hover {
+  background: #3498db;
+  color: #fff;
+}
+.header_img {
+  text-align: right;
+}
+
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(-1rem);
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(-1rem);
+  }
+}
+
+.contact_div {
+  width: 100%;
+  height: 75vh;
+}
+
+footer {
+  width: 100%;
+  height: 3.5rem !important;
+  margin-top: auto !important;
+}
+
+footer p {
+  padding: 0;
+  line-height: 3.5rem !important;
+  margin: 0;
+}
